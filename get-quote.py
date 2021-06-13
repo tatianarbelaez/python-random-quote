@@ -8,7 +8,10 @@ def primary():
 
   last = len(quotes) - 1
   rnd = random.randint(0, last)
-  print(quotes[rnd])
+  rnd1 = random.randint(0, last)
+  print("first: " + quotes[rnd].rstrip())
+  print("second: " + quotes[rnd1].rstrip())
+  #rstrip quita todo tipo de espacios en blanco
 
 if __name__== "__main__":
   primary()
